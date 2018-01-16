@@ -1,0 +1,54 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/graphik-accenture-web/graphik-accenture-web.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: white;
+
+$mainColor: #00D800;
+$headingColor: #00F3FF;
+
+$mainFontSize: 42px;
+$mainFont: 'Graphik Accenture', Helvetica, sans-serif;
+$headingFont: 'Graphik Accenture', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #00FF00;
+$linkColorHover: darken( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 35% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #000;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

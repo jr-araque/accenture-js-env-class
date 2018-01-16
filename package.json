@@ -1,0 +1,53 @@
+{
+  "name": "accenture-js-env-class",
+  "version": "1.0.0",
+  "description": "A simple presentation made with reveal.js",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "grunt css-themes",
+    "start": "npm run dev:sockets & npm run dev:clients",
+    "dev:sockets": "node public/plugin/multiplex",
+    "dev:clients": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jr-araque/accenture-js-env-class.git"
+  },
+  "keywords": [
+    "Presentation",
+    "Demo"
+  ],
+  "author": "Jose Reinaldo Araque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jr-araque/accenture-js-env-class/issues"
+  },
+  "homepage": "https://github.com/jr-araque/accenture-js-env-class#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.15.2",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-qunit": "~1.2.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-retire": "^1.0.7",
+    "grunt-sass": "^2.0.0",
+    "grunt-zip": "~0.17.1",
+    "hbs": "^4.0.1",
+    "mustache": "^2.3.0",
+    "socket.io": "^1.7.3"
+  },
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "hbs": "^4.0.1"
+  }
+}
