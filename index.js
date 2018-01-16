@@ -28,6 +28,7 @@ app.get('/master', (req,res) => {
     })
 })
 
-app.listen( process.env.PORT , () => {
-   console.log(green + 'Application started on...' + process.env.HOST + ":" + process.env.PORT)
+app.listen( process.env.PORT , (err) => {
+    if (err) console.log(err)
+    else console.log('Application started on...' + process.env.HOST + ":" + process.env.PORT)
 })
