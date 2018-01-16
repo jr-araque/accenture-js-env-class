@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "grunt css-themes",
-    "start": "npm run dev:sockets & npm run dev:clients",
-    "dev:sockets": "node public/plugin/multiplex",
-    "dev:clients": "node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -45,9 +43,5 @@
     "hbs": "^4.0.1",
     "mustache": "^2.3.0",
     "socket.io": "^1.7.3"
-  },
-  "dependencies": {
-    "express-handlebars": "^3.0.0",
-    "hbs": "^4.0.1"
   }
 }
