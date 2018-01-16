@@ -21,7 +21,6 @@ app.get('/', function (req,res) {
 })
 
 app.get('/master', (req,res) => {
-    console.log(req.headers);
     if (req.headers.host !== 'localhost:3000') res.sendStatus(401, 'Master presentation accesible only on localhost'); // Limit to only work on local environment
     res.sendFile('src/master.html', OPTS, (err) => {
         if (err) console.log(err)
@@ -30,5 +29,8 @@ app.get('/master', (req,res) => {
 
 app.listen( process.env.PORT , (err) => {
     if (err) console.log(err)
-    else console.log('Application started on...' + process.env.HOST + ":" + process.env.PORT)
+    else {
+        const HOST = (!process.env.HOST) ? "http://localhost" : process.env.HOST
+        console.log('Application started on... ' + HOST + ":" + process.env.PORT)
+    } 
 })

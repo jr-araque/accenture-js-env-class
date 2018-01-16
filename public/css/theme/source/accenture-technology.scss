@@ -48,6 +48,20 @@ section.has-light-background {
 	}
 }
 
+.custom-header {
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.custom-header img {
+	position: absolute;
+	z-index: 1;
+	float: right;
+	padding: 1rem;
+}
+
 
 // Theme template ------------------------------
 @import "../template/theme";
