@@ -6,6 +6,7 @@
   "scripts": {
     "prestart": "grunt css-themes",
     "start": "node index.js",
+    "dev": "PORT=3000 node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

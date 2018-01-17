@@ -22,7 +22,6 @@
 		</script>
 	</head>
 	<body>
-		
 		<div class="reveal">
 				<div class="custom-header">
 					<img src="assets/img/accn/dimensional-green-accn-technology.png" alt="Accenture Technology Logo" height="150px" width="150px">
@@ -30,39 +29,180 @@
 				<div class="slides">
 				<!-- Title & Presentation -->
 				<section>
-					<h3>Title & Presentation</h3>
-					<aside class="notes">
-						Title & Presentation
-					</aside>
+					<section>
+						<img src="assets/img/accn/accn-technology-full-white.png" alt="Accenture Technology" style="border:0; background: transparent;width:30rem;">
+						<h6 style="font-weight:lighter; font-style:italic;">Angular Academy</h6>
+						<h3>Building a JS Development Environment</h4>
+						<aside class="notes">
+							<ul>
+								<li>NEXT -></li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>About this session</h3>
+						<h6 style="font-weight:lighter; font-style:italic;">& Faculty</h6>
+						<aside class="notes">
+							About The Class:
+							Brief introduction to an JS working environment.
+							Faculty
+							<ul>
+								<li>Name</li>
+								<li>What do you do</li>
+								<li>EID</li>
+								<li>Where to find</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h4>Do I need to set my JS Environment?</h4>
+						<ul>
+							<li>YES!</li>
+							<li>Order</li>
+							<li>Individual Work / Team Work</li>
+							<li>Tooling</li>
+							<li>Only once (in the best case scenario)</li>
+						</ul>
+						<aside class="notes">
+								<ul>
+									<li>Wether you like it or not</li>
+									<li>To have some sense of order when you are working on a project</li>
+									<li>Individual: Proficient</li>
+									<li>Team: Guidelines / Better integration</li>
+									<li>Scripting / Automating</li>
+									<li>Do it once, never come back... (if it works don't touch it)</li>
+								</ul>
+							</aside>
+					</section>
 				</section>
-				<!-- About The Class -->
-				<section>
-					<h3>About The Class</h3>
-					<aside class="notes">
-						About The Class
-					</aside>
-				</section>
-				<!-- GIT Review -->
-				<section>
-					<h3>GIT Review</h3>
-					<aside class="notes">
-						GIT Review
-					</aside>
-				</section>
+				
 				<!-- Editors And Features -->
 				<section>
-					<h3>Editors And Features</h3>
+					<h3>Editors & Features</h3>
+					<ul>
+						<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+						<li><a href="https://atom.io/">Atom</a></li>
+						<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+						<li><a href="https://www.jetbrains.com/webstorm/">Web Storm (IDE) $$$</a></li>
+					</ul>
 					<aside class="notes">
-						Editors And Features
+						<ul>
+							<li>Intro for the editors</li>
+							<li>Editors vs IDE's</li>
+							<li>Choose Any</li>
+						</ul>
 					</aside>
 				</section>
+
 				<!-- NPM -->
 				<section>
-					<h3>NPM</h3>
-					<aside class="notes">
-						NPM
-					</aside>
-				</section>
+					<section>
+						<h3>PACKAGE MANAGERS</h3>
+						<ul>
+							<li>My Options? <a href="https://nodejs.org/es/">Npm</a>, <a href="https://yarnpkg.com/lang/en/">Yarn</a>, <span style="text-decoration:line-through;">Bower (Deprecated)</span></li>
+							<li>What does it does?</li>
+						</ul>
+						<aside class="notes">
+							<li>NPM is the default / fast / proved</li>
+							<li>YARN is faster </li>
+							<li>What does it does?</li>
+						</aside>
+					</section>
+					<section>
+						<h3>NPM DEMO</h3>
+						<ul>
+							<li>Download & Install <a href="https://nodejs.org/es/">NPM</a></li>
+						</ul>
+						<pre><code style="font-size:1rem;" class="hljs" data-trim>
+
+$ node -v // Check your current version
+v8.9.1 // example output
+
+$ npm -v // Check your current npm version
+5.5.1 // example output
+
+// Initialize a Repository
+$ mkdir js-env-demo // creates a directory
+$ cd js-env-demo // change directory
+$ npm init  // initialize project
+
+// Follow the steps
+						</code></pre>
+					</section>
+					<section>
+						<h3>Package.json</h3>
+						<ul>
+							<li>Go Through</li>
+						</ul>
+							<pre><code style="font-size:1rem;" class="hljs" data-trim>
+	{
+	  "name": "js-env-demo",
+	  "version": "1.0.0",
+	  "description": "",
+	  "main": "index.js",
+	  "scripts": {
+			"test": "echo \"Error: no test specified\" && exit 1"
+	  },
+	  "author": "",
+	  "license": "ISC"
+	}
+							</code></pre>
+						</section>
+					</section>
+
+				<!-- GIT Review -->
+				<section>
+						<section>
+							<h3>GIT Review</h3>
+							<ul>
+								<li>Why Git?</li>
+								<li>Basics</li>
+								<li>Workflow</li>
+								<li>GUI's</li>
+							</ul>
+							<aside class="notes">
+								<ul>
+									<li>Version Control</li>
+									<li>Industry facto standard / Fast? / Reliable? / "The Cloud"</li>
+									<li>Descentralized / Centralized</li>
+									<li>Basics</li>
+								</ul>
+							</aside>
+						</section>
+						<section>
+							<h5>Basics</h5>
+							<ul>
+								<li>local init / cloud service init)</li>
+								<li>Add / Commit / Stash</li>
+								<li>Push</li>
+								<li>Pull / Fetch</li>
+							</ul>
+						</section>
+						<section>
+							<h5>Git Demo</h5>
+							<ol>
+								<li>Install git Locally <small>(Click for <a href="https://git-scm.com/downloads">Windows</a>)</small></li>
+							</ol>
+							<pre><code style="font-size:1rem;" class="hljs" data-trim>
+	// GIT BASICS DEMO
+	
+	$ git --version
+	$ git config --global user.name "Example Git User"
+	$ git config --global user.email "example@messup.com"
+	$ git clone https://github.com/[USER_NAME]/[REPOSITORY_NAME].git  // Example from github
+	
+							</code></pre>
+						</section>
+						<section>
+							<h5>GUI's</h5>
+							<ul>
+								<li><a href="https://git-scm.com/downloads">Git Bash (Windows)</a></li>
+								<li><a href="https://www.sourcetreeapp.com/">Source Tree</a></li>
+								<li><a href="https://www.gitkraken.com/">Git Kraken</a></li>
+							</ul>
+						</section>
+					</section>
+				
 				<!-- ES5, ES6, TypeScript -->
 				<section>
 					<h3>ES5, ES6, TypeScript</h3>
@@ -165,10 +305,10 @@
                 height: 700,
 
                 // Factor of the display size that should remain empty around the content
-                margin: 0.1,
+                margin: 0.05,
 
                 // Bounds for smallest/largest possible scale to apply to content
-                minScale: 0.2,
+                minScale: 0.8,
                 maxScale: 1,
 
                 // Display presentation control arrows
