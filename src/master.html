@@ -22,111 +22,112 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-				<div class="custom-header">
-					<img src="assets/img/accn/dimensional-green-accn-technology.png" alt="Accenture Technology Logo" height="150px" width="150px">
-				</div>
-				<div class="slides">
-				<!-- Title & Presentation -->
-				<section>
+			<div class="reveal">
+					<div class="custom-header">
+						<img src="assets/img/accn/dimensional-green-accn-technology.png" alt="Accenture Technology Logo" height="150px" width="150px">
+					</div>
+					<div class="slides">
+					<!-- Title & Presentation -->
 					<section>
-						<img src="assets/img/accn/accn-technology-full-white.png" alt="Accenture Technology" style="border:0; background: transparent;width:30rem;">
-						<h6 style="font-weight:lighter; font-style:italic;">Angular Academy</h6>
-						<h3>Building a JS Development Environment</h4>
-						<aside class="notes">
-							<ul>
-								<li>NEXT -></li>
-							</ul>
-						</aside>
-					</section>
-					<section>
-						<h3>About this session</h3>
-						<h6 style="font-weight:lighter; font-style:italic;">& Faculty</h6>
-						<aside class="notes">
-							About The Class:
-							Brief introduction to an JS working environment.
-							Faculty
-							<ul>
-								<li>Name</li>
-								<li>What do you do</li>
-								<li>EID</li>
-								<li>Where to find</li>
-							</ul>
-						</aside>
-					</section>
-					<section>
-						<h4>Do I need to set my JS Environment?</h4>
-						<ul>
-							<li>YES!</li>
-							<li>Order</li>
-							<li>Individual Work / Team Work</li>
-							<li>Tooling</li>
-							<li>Only once (in the best case scenario)</li>
-						</ul>
-						<aside class="notes">
+						<section>
+							<img src="assets/img/accn/accn-technology-full-white.png" alt="Accenture Technology" style="border:0; background: transparent;width:30rem;">
+							<h6 style="font-weight:lighter; font-style:italic;">Angular Academy</h6>
+							<h3>Building a JS Development Environment</h4>
+							<aside class="notes">
 								<ul>
-									<li>Wether you like it or not</li>
-									<li>To have some sense of order when you are working on a project</li>
-									<li>Individual: Proficient</li>
-									<li>Team: Guidelines / Better integration</li>
-									<li>Scripting / Automating</li>
-									<li>Do it once, never come back... (if it works don't touch it)</li>
+									<li>NEXT -></li>
 								</ul>
 							</aside>
+						</section>
+						<section>
+							<h3>About this session</h3>
+							<h6 style="font-weight:lighter; font-style:italic;">& Faculty</h6>
+							<aside class="notes">
+								About The Class:
+								Brief introduction to an JS working environment.
+								Faculty
+								<ul>
+									<li>Name</li>
+									<li>What do you do</li>
+									<li>EID</li>
+									<li>Where to find</li>
+								</ul>
+							</aside>
+						</section>
+						<section>
+							<h4>Do I need to set my JS Environment?</h4>
+							<ul>
+								<li>YES!</li>
+								<li>Order</li>
+								<li>Individual Work / Team Work</li>
+								<li>Tooling</li>
+								<li>Only once (in the best case scenario)</li>
+							</ul>
+							<aside class="notes">
+									<ul>
+										<li>Wether you like it or not</li>
+										<li>To have some sense of order when you are working on a project</li>
+										<li>Individual: Proficient</li>
+										<li>Team: Guidelines / Better integration</li>
+										<li>Scripting / Automating</li>
+										<li>Do it once, never come back... (if it works don't touch it)</li>
+									</ul>
+								</aside>
+						</section>
 					</section>
-				</section>
-				
-				<!-- Editors And Features -->
-				<section>
-					<h3>Editors & Features</h3>
-					<ul>
-						<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-						<li><a href="https://atom.io/">Atom</a></li>
-						<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
-						<li><a href="https://www.jetbrains.com/webstorm/">Web Storm (IDE) $$$</a></li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Intro for the editors</li>
-							<li>Editors vs IDE's</li>
-							<li>Choose Any</li>
-						</ul>
-					</aside>
-				</section>
-
-				<!-- NPM -->
-				<section>
+					
+					<!-- Editors And Features -->
 					<section>
-						<h3>PACKAGE MANAGERS</h3>
+						<h3>Editors & Features</h3>
 						<ul>
-							<li>My Options? <a href="https://nodejs.org/es/">Npm</a>, <a href="https://yarnpkg.com/lang/en/">Yarn</a>, <span style="text-decoration:line-through;">Bower (Deprecated)</span></li>
-							<li>What does it does?</li>
+							<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+							<li><a href="https://atom.io/">Atom</a></li>
+							<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+							<li><a href="https://www.jetbrains.com/webstorm/">Web Storm (IDE) $$$</a></li>
 						</ul>
 						<aside class="notes">
-							<li>NPM is the default / fast / proved</li>
-							<li>YARN is faster </li>
-							<li>What does it does?</li>
+							<ul>
+								<li>Intro for the editors</li>
+								<li>Editors vs IDE's</li>
+								<li>Choose Any</li>
+							</ul>
 						</aside>
 					</section>
+		
+					<!-- NPM -->
 					<section>
-						<h3>NPM DEMO</h3>
-						<ul>
-							<li>Download & Install <a href="https://nodejs.org/es/">NPM</a></li>
-						</ul>
-						<pre><code style="font-size:1rem;" class="hljs" data-trim>
-
-$ node -v // Check your current version
-v8.9.1 // example output
-
-$ npm -v // Check your current npm version
-5.5.1 // example output
-
-// Initialize a Repository
-$ mkdir js-env-demo // creates a directory
-$ cd js-env-demo // change directory
-$ npm init  // initialize project
-
-// Follow the steps
+						<section>
+							<h3>PACKAGE MANAGERS</h3>
+							<ul>
+								<li>My Options? <a href="https://nodejs.org/es/">Npm</a>, <a href="https://yarnpkg.com/lang/en/">Yarn</a>, <a href="https://bower.io/">Bower(?)</a></li>
+								<li>What does it do?</li>
+							</ul>
+							<aside class="notes">
+								<li>NPM is the default / fast / proved</li>
+								<li>YARN is faster </li>
+								<li>Bower very specific</li>
+								<li>What does it do?</li>
+							</aside>
+						</section>
+						<section>
+							<h3>NPM DEMO</h3>
+							<ul>
+								<li>Download & Install <a href="https://nodejs.org/es/">NPM</a></li>
+							</ul>
+							<pre><code style="font-size:1rem;" class="hljs" data-trim>
+		
+		$ node -v // Check your current version
+		v8.9.1 // example output
+		
+		$ npm -v // Check your current npm version
+		5.5.1 // example output
+		
+		// Initialize a Repository
+		$ mkdir js-env-demo // creates a directory
+		$ cd js-env-demo // change directory
+		$ npm init  // initialize project
+		
+		// Follow the steps
 						</code></pre>
 					</section>
 					<section>
@@ -135,21 +136,272 @@ $ npm init  // initialize project
 							<li>Go Through</li>
 						</ul>
 							<pre><code style="font-size:1rem;" class="hljs" data-trim>
-	{
-	  "name": "js-env-demo",
-	  "version": "1.0.0",
-	  "description": "",
-	  "main": "index.js",
-	  "scripts": {
-			"test": "echo \"Error: no test specified\" && exit 1"
-	  },
-	  "author": "",
-	  "license": "ISC"
-	}
+		{
+			"name": "js-env-demo",
+			"version": "1.0.0",
+			"description": "",
+			"main": "index.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+		},
+			"author": "",
+			"license": "ISC"
+		}
 							</code></pre>
 						</section>
 					</section>
-
+					<!-- ES5, ES6, TypeScript -->
+					<section>
+						<section>
+							<h3>Javascript Family</h3>
+							<ul>
+								<li>ES5</li>
+								<li>ES6 (ECMAScript 2015 || ES2015)</li>
+								<li>ES7 (ECMAScript 2016 || ES2016)</li>
+							</ul>
+							<h6 style="margin-top: 1rem;">Others</h6>
+							<ul>
+								<li>TypeScript</li>
+								<li>Flow</li>
+							</ul>
+							<aside class="notes">
+								<li>ECMAScript is the standard</li>
+								<li>Javascript is the Implementation of the Standard</li>
+								<li>ES5 Core know features</li>
+								<li>ES6 (Version 6 or ECMAScript 2015)</li>
+								<li>ES7 (Version 7 or ECMAScript 2016)</li>
+								<li>TypeScript adds Static Typing, Classes, Interfaces</li>
+								<li>Flow (Static typing library)</li>
+							</aside>
+						</section>
+						<section>
+							<pre><code style="font-size:1rem;" class="hljs" data-trim>
+		// Typescript Example - Must be transpiled
+		import * as express from 'express';
+		
+		// ES6/ES2015 Equivalent - Can run on server.
+		const express = require('express');
+		
+		// ES5 - Can run on server & web
+		var express = require('express')
+		
+							</code></pre>
+						</section>
+					</section>
+					<!-- Transpilers, Compilers & Bundlers -->
+					<section>
+						<section>
+							<h3>Transpilers, Compilers & Bundlers</h3>
+						</section>
+						<section>
+							<h6>Compiling</h6>
+							<p>
+								is the general term for taking source code written in one language and transforming into another.
+							</p>
+							<ul>
+								<li><a href="https://clojurescript.org/">ClojureScript</a></li>
+								<li><a href="https://reasonml.github.io/">Reason</a></li>
+								<li><a href="http://elm-lang.org/">Elm</a></li>
+								<li><a href="https://kotlinlang.org/">Kotlin</a></li>
+							</ul>
+							<hr>
+							<h6>Transpiling</h6>
+							<p>
+								is a specific term for taking source code written in one language and transforming into another language that has a similar level of abstraction
+							</p>
+							<ul>
+								<li>TypeScript (Using tsc)</li>
+								<li>ES2015/ES2016 to ES5 (Using babel)</li>
+							</ul>
+						</section>
+						<section>
+							<h5>Bundlers</h5>
+							<p>
+								Takes several JS Dependencies/files and puts it into one file.
+							</p>
+							<ul>
+								<li><a href="https://webpack.js.org/">WebPack</a></li>
+								<li><a href="http://browserify.org/">Browserify</a></li>
+								<li><a href="https://parceljs.org/">Parcel</a></li>
+							</ul>
+						</section>
+					</section>
+					<!-- Linting -->
+					<section>
+						<h3>Linting</h3>
+						<ul>
+							<li>what is Linting</li>
+							<li>Is it useful?</li>
+						</ul>
+						<aside class="notes">
+							Linting
+						</aside>
+					</section>
+					<!-- Testing -->
+					<section>
+						<section>
+							<h3>Testing</h3>
+							<ul>
+								<li>Why?</li>
+								<li>Everybody hates testing</li>
+							</ul>
+							<aside class="notes">
+								Testing
+							</aside>
+						</section>
+						<section>
+							<h5>Types and Libraries</h5>
+							<ul>
+								<li>
+									Unit Testing
+									(
+									<a href="https://jasmine.github.io/">Jasmine, </a>
+									<a href="https://mochajs.org/">Mocha</a>
+									&
+									<a href="http://chaijs.com/">Chai</a>
+									<a href="https://facebook.github.io/jest/">Jest</a>
+									)
+								</li>
+								<li>
+									Integration Testing
+								</li>
+								<li>
+									End to End Testing
+									(
+										<a href="http://www.protractortest.org/">
+										Protractor
+										</a>,
+										<a href="http://nightwatchjs.org/">
+											Nightwatch
+										</a>
+									)
+								</li>
+							</ul>
+							<aside class="notes">
+								<ul>
+									<li>Unit - Detailed</li>
+									<li>Integration - Component Colaboration</li>
+									<li>E2E - From user perspective</li>
+								</ul>
+							</aside>
+						</section>
+						<section>
+							<h6>Other types of testing...</h6>
+							<pre><code style="font-size:1rem;" class="hljs" data-trim>
+		Acceptance Testing
+		Accessibility Testing
+		Active Testing
+		Agile Testing
+		Age Testing
+		Ad-hoc Testing
+		Alpha Testing
+		Assertion Testing
+		API Testing
+		All-pairs Testing
+		Automated Testing
+		Basis Path Testing
+		Backward Compatibility Testing
+		Beta Testing
+		Benchmark Testing
+		Integration Testing
+		Binary Portability Testing
+		Bottom Up Integration Testing
+		Branch Testing
+		Breadth Testing
+		Black box Testing
+		Code-driven Testing
+		Compatibility Testing
+		Comparison Testing
+		Component Testing
+		Configuration Testing
+		Condition Coverage Testing
+		Compliance Testing
+		Concurrency Testing
+		Conformance Testing
+		Context Driven Testing
+		Conversion Testing
+		Decision Coverage Testing
+		Destructive Testing
+		Dependency Testing
+		Dynamic Testing
+		Domain Testing
+		Error-Handling Testing
+		End-to-end Testing
+		Endurance Testing
+		Exploratory Testing
+		Partitioning Testinga
+		Fault injection Testing
+		Formal verification Testing
+		Functional Testing
+		Fuzz Testing
+		Gorilla Testing
+		Gray Box Testing
+		Glass box Testing
+		GUI software Testing
+		Globalization Testing
+		Hybrid Integration Testing
+		Integration Testing
+		Interface Testing
+		Install-uninstall Testing
+		Internationalization Testing
+		Inter-Systems Testing
+		Keyword-driven Testing
+		Load Testing
+		Localization Testing
+		Loop Testing
+		Manual Scripted Testing
+		Manual-Support Testing
+		Model-Based Testing
+		Mutation Testing
+		Modularity-driven Testing
+		Non-functional Testing
+		Negative Testing
+		Operational Testing
+		Orthogonal array Testing
+		Pair Testing
+		Passive Testing
+		Parallel Testing
+		Path Testing
+		Penetration Testing
+		Performance Testing
+		Qualification Testing
+		Ramp Testing
+		Regression Testing
+		Recovery Testing
+		Requirements Testing
+		Security Testing
+		Sanity Testing
+		Scenario Testing
+		Scalability Testing
+		Statement Testing
+		Static Testing
+		Stability Testing
+		Smoke Testing
+		Storage Testing
+		Stress Testing
+		Structural Testing
+		System Testing
+		System integration Testing
+		Top Down Integration Testing
+		Thread Testing
+		Upgrade Testing
+		Unit Testing
+		User Interface Testing
+		Usability Testing
+		Volume Testing
+		Vulnerability Testing
+		White box Testing
+		Workflow Testing
+							</code></pre>
+							<p style="font-size:1.2rem">
+								(
+									Source: 
+									<a href="https://www.guru99.com/types-of-software-testing.html">100+ Types of Software Testing...</a>
+								)
+							</p>
+						</section>
+						
+					</section>
 				<!-- GIT Review -->
 				<section>
 						<section>
@@ -172,11 +424,14 @@ $ npm init  // initialize project
 						<section>
 							<h5>Basics</h5>
 							<ul>
-								<li>local init / cloud service init)</li>
+								<li>local init / cloud service init</li>
 								<li>Add / Commit / Stash</li>
 								<li>Push</li>
 								<li>Pull / Fetch</li>
 							</ul>
+						</section>
+						<section>
+							<img src="/assets/img/accn/git-workflow.png" alt="Git Workflow" style="max-height: 40rem;">
 						</section>
 						<section>
 							<h5>Git Demo</h5>
@@ -184,13 +439,13 @@ $ npm init  // initialize project
 								<li>Install git Locally <small>(Click for <a href="https://git-scm.com/downloads">Windows</a>)</small></li>
 							</ol>
 							<pre><code style="font-size:1rem;" class="hljs" data-trim>
-	// GIT BASICS DEMO
-	
-	$ git --version
-	$ git config --global user.name "Example Git User"
-	$ git config --global user.email "example@messup.com"
-	$ git clone https://github.com/[USER_NAME]/[REPOSITORY_NAME].git  // Example from github
-	
+		// GIT BASICS DEMO
+		
+		$ git --version
+		$ git config --global user.name "Example Git User"
+		$ git config --global user.email "example@messup.com"
+		$ git clone https://github.com/[USER_NAME]/[REPOSITORY_NAME].git  // Example from github
+		
 							</code></pre>
 						</section>
 						<section>
@@ -203,40 +458,36 @@ $ npm init  // initialize project
 						</section>
 					</section>
 				
-				<!-- ES5, ES6, TypeScript -->
-				<section>
-					<h3>ES5, ES6, TypeScript</h3>
-					<aside class="notes">
-						ES5, ES6, TypeScript
-					</aside>
-				</section>
-				<!-- Transpilers, Compilers & Bundlers -->
-				<section>
-					<h3>Transpilers, Compilers & Bundlers</h3>
-					<aside class="notes">
-						Transpilers, Compilers & Bundlers
-					</aside>
-				</section>
-				<!-- Linting -->
-				<section>
-					<h3>Linting</h3>
-					<aside class="notes">
-						Linting
-					</aside>
-				</section>
-				<!-- Testing -->
-				<section>
-					<h3>Testing</h3>
-					<aside class="notes">
-						Testing
-					</aside>
-				</section>
 				<!-- Deployment -->
 				<section>
-					<h3>Deployment</h3>
-					<aside class="notes">
-						Deployment
-					</aside>
+					<section>
+						<h3>Deployment</h3>
+						<aside class="notes">
+							Deployment
+						</aside>
+					</section>
+					<section>
+						<h6>Stages</h6>
+						<ul>
+							<li>Development / Local</li>
+							<li>Testing</li>
+							<li>Staging</li>
+							<li>Production</li>
+						</ul>
+					</section>
+					<section>
+						<img style="border: none;background: transparent;" src="https://i0.wp.com/ventureapp-blog.s3.amazonaws.com/uploads/2016/07/as-a-service.png" alt="IaaS vs PaaS vs SaaS" height="600px">
+					</section>
+					<section>
+						<h6>Cloud Service Providers</h6>
+						<ul>
+							<li>Amazon Web Services</li>
+							<li>Microsoft Azure</li>
+							<li>Google Cloud Platform</li>
+							<li>Oracle Cloud</li>
+							<li>Redhat OpenShift</li>
+						</ul>
+					</section>			
 				</section>
 				<!-- CI / CD -->
 				<section>
@@ -248,25 +499,8 @@ $ npm init  // initialize project
 				
 				<!-- What The Heck does this have to do with Angular? -->
 				<section>
-					<section>Angular Project Structure</section>
-					<section>Angular Demo</section>
-					<aside class="notes">
-					</aside>
-				</section>
-				<!-- Conclusions -->
-				<section>
-					<h1>Conclusions</h1>
-					<ul>
-						<li>Git</li>
-						<li>Editors</li>
-						<li>NPM</li>
-						<li>ES5</li>
-						<li>Transpilers</li>
-						<li>Linting</li>
-						<li>Testing</li>
-						<li>CI/CD</li>
-						<li>Deployment</li>
-					</ul>
+					<h3>Angular Project Project Structure</h3>
+					<h6>Demo</h6>
 					<aside class="notes">
 					</aside>
 				</section>
@@ -279,6 +513,7 @@ $ npm init  // initialize project
 				<!-- Resource List -->
 				<section>
 					<h2>Resources</h2>
+					<h6><a href="">Here</a></h6>
 					<aside class="notes">
 					</aside>
 				</section>
@@ -290,7 +525,7 @@ $ npm init  // initialize project
 				</section>
 			</div>
 		</div>
-
+		
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script>

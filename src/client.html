@@ -22,425 +22,661 @@
 		</script>
 	</head>
 	<body>
-			<div class="reveal">
-					<div class="custom-header">
-						<img src="assets/img/accn/dimensional-green-accn-technology.png" alt="Accenture Technology Logo" height="150px" width="150px">
-					</div>
-					<div class="slides">
-					<!-- Title & Presentation -->
-					<section>
-						<section>
-							<img src="assets/img/accn/accn-technology-full-white.png" alt="Accenture Technology" style="border:0; background: transparent;width:30rem;">
-							<h6 style="font-weight:lighter; font-style:italic;">Angular Academy</h6>
-							<h3>Building a JS Development Environment</h4>
-							<aside class="notes">
-								<ul>
-									<li>NEXT -></li>
-								</ul>
-							</aside>
-						</section>
-						<section>
-							<h3>About this session</h3>
-							<h6 style="font-weight:lighter; font-style:italic;">& Faculty</h6>
-							<aside class="notes">
-								About The Class:
-								Brief introduction to an JS working environment.
-								Faculty
-								<ul>
-									<li>Name</li>
-									<li>What do you do</li>
-									<li>EID</li>
-									<li>Where to find</li>
-								</ul>
-							</aside>
-						</section>
-						<section>
-							<h4>Do I need to set my JS Environment?</h4>
-							<ul>
-								<li>YES!</li>
-								<li>Order</li>
-								<li>Individual Work / Team Work</li>
-								<li>Tooling</li>
-								<li>Only once (in the best case scenario)</li>
-							</ul>
-							<aside class="notes">
-									<ul>
-										<li>Wether you like it or not</li>
-										<li>To have some sense of order when you are working on a project</li>
-										<li>Individual: Proficient</li>
-										<li>Team: Guidelines / Better integration</li>
-										<li>Scripting / Automating</li>
-										<li>Do it once, never come back... (if it works don't touch it)</li>
-									</ul>
-								</aside>
-						</section>
-					</section>
-					
-					<!-- Editors And Features -->
-					<section>
-						<h3>Editors & Features</h3>
-						<ul>
-							<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
-							<li><a href="https://atom.io/">Atom</a></li>
-							<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
-							<li><a href="https://www.jetbrains.com/webstorm/">Web Storm (IDE) $$$</a></li>
-						</ul>
-						<aside class="notes">
-							<ul>
-								<li>Intro for the editors</li>
-								<li>Editors vs IDE's</li>
-								<li>Choose Any</li>
-							</ul>
-						</aside>
-					</section>
-	
-					<!-- NPM -->
-					<section>
-						<section>
-							<h3>PACKAGE MANAGERS</h3>
-							<ul>
-								<li>My Options? <a href="https://nodejs.org/es/">Npm</a>, <a href="https://yarnpkg.com/lang/en/">Yarn</a>, <span style="text-decoration:line-through;">Bower (Deprecated)</span></li>
-								<li>What does it does?</li>
-							</ul>
-							<aside class="notes">
-								<li>NPM is the default / fast / proved</li>
-								<li>YARN is faster </li>
-								<li>What does it does?</li>
-							</aside>
-						</section>
-						<section>
-							<h3>NPM DEMO</h3>
-							<ul>
-								<li>Download & Install <a href="https://nodejs.org/es/">NPM</a></li>
-							</ul>
-							<pre><code style="font-size:1rem;" class="hljs" data-trim>
-	
-	$ node -v // Check your current version
-	v8.9.1 // example output
-	
-	$ npm -v // Check your current npm version
-	5.5.1 // example output
-	
-	// Initialize a Repository
-	$ mkdir js-env-demo // creates a directory
-	$ cd js-env-demo // change directory
-	$ npm init  // initialize project
-	
-	// Follow the steps
-							</code></pre>
-						</section>
-						<section>
-							<h3>Package.json</h3>
-							<ul>
-								<li>Go Through</li>
-							</ul>
-								<pre><code style="font-size:1rem;" class="hljs" data-trim>
-		{
-		  "name": "js-env-demo",
-		  "version": "1.0.0",
-		  "description": "",
-		  "main": "index.js",
-		  "scripts": {
-				"test": "echo \"Error: no test specified\" && exit 1"
-		  },
-		  "author": "",
-		  "license": "ISC"
-		}
-								</code></pre>
-							</section>
-						</section>
-	
-					<!-- GIT Review -->
-					<section>
-							<section>
-								<h3>GIT Review</h3>
-								<ul>
-									<li>Why Git?</li>
-									<li>Basics</li>
-									<li>Workflow</li>
-									<li>GUI's</li>
-								</ul>
-								<aside class="notes">
-									<ul>
-										<li>Version Control</li>
-										<li>Industry facto standard / Fast? / Reliable? / "The Cloud"</li>
-										<li>Descentralized / Centralized</li>
-										<li>Basics</li>
-									</ul>
-								</aside>
-							</section>
-							<section>
-								<h5>Basics</h5>
-								<ul>
-									<li>local init / cloud service init)</li>
-									<li>Add / Commit / Stash</li>
-									<li>Push</li>
-									<li>Pull / Fetch</li>
-								</ul>
-							</section>
-							<section>
-								<h5>Git Demo</h5>
-								<ol>
-									<li>Install git Locally <small>(Click for <a href="https://git-scm.com/downloads">Windows</a>)</small></li>
-								</ol>
-								<pre><code style="font-size:1rem;" class="hljs" data-trim>
-		// GIT BASICS DEMO
-		
-		$ git --version
-		$ git config --global user.name "Example Git User"
-		$ git config --global user.email "example@messup.com"
-		$ git clone https://github.com/[USER_NAME]/[REPOSITORY_NAME].git  // Example from github
-		
-								</code></pre>
-							</section>
-							<section>
-								<h5>GUI's</h5>
-								<ul>
-									<li><a href="https://git-scm.com/downloads">Git Bash (Windows)</a></li>
-									<li><a href="https://www.sourcetreeapp.com/">Source Tree</a></li>
-									<li><a href="https://www.gitkraken.com/">Git Kraken</a></li>
-								</ul>
-							</section>
-						</section>
-					
-					<!-- ES5, ES6, TypeScript -->
-					<section>
-						<h3>ES5, ES6, TypeScript</h3>
-						<aside class="notes">
-							ES5, ES6, TypeScript
-						</aside>
-					</section>
-					<!-- Transpilers, Compilers & Bundlers -->
-					<section>
-						<h3>Transpilers, Compilers & Bundlers</h3>
-						<aside class="notes">
-							Transpilers, Compilers & Bundlers
-						</aside>
-					</section>
-					<!-- Linting -->
-					<section>
-						<h3>Linting</h3>
-						<aside class="notes">
-							Linting
-						</aside>
-					</section>
-					<!-- Testing -->
-					<section>
-						<h3>Testing</h3>
-						<aside class="notes">
-							Testing
-						</aside>
-					</section>
-					<!-- Deployment -->
-					<section>
-						<h3>Deployment</h3>
-						<aside class="notes">
-							Deployment
-						</aside>
-					</section>
-					<!-- CI / CD -->
-					<section>
-						<h3>CI / CD</h3>
-						<aside class="notes">
-							CI / CD
-						</aside>
-					</section>
-					
-					<!-- What The Heck does this have to do with Angular? -->
-					<section>
-						<h3>Angular Project Structure Explanation</h3>
-						<aside class="notes">
-						</aside>
-					</section>
-					<!-- Conclusions -->
-					<section>
-						<h1>Conclusions</h1>
-						<ul>
-							<li>Git</li>
-							<li>Editors</li>
-							<li>NPM</li>
-							<li>ES5</li>
-							<li>Transpilers</li>
-							<li>Linting</li>
-							<li>Testing</li>
-							<li>CI/CD</li>
-							<li>Deployment</li>
-						</ul>
-						<aside class="notes">
-						</aside>
-					</section>
-					<!-- Q&A -->
-					<section>
-						<h2>Questions?</h2>
-						<aside class="notes">
-						</aside>
-					</section>
-					<!-- Resource List -->
-					<section>
-						<h2>Resources</h2>
-						<aside class="notes">
-						</aside>
-					</section>
-					<!-- The End -->
-					<section>
-						<h2>The End</h2>
-						<aside class="notes">
-						</aside>
-					</section>
-				</div>
+		<div class="reveal">
+			<div class="custom-header">
+				<img src="assets/img/accn/dimensional-green-accn-technology.png" alt="Accenture Technology Logo" height="150px" width="150px">
 			</div>
+			<div class="slides">
+			<!-- Title & Presentation -->
+			<section>
+				<section>
+					<img src="assets/img/accn/accn-technology-full-white.png" alt="Accenture Technology" style="border:0; background: transparent;width:30rem;">
+					<h6 style="font-weight:lighter; font-style:italic;">Angular Academy</h6>
+					<h3>Building a JS Development Environment</h4>
+					<aside class="notes">
+						<ul>
+							<li>NEXT -></li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>About this session</h3>
+					<h6 style="font-weight:lighter; font-style:italic;">& Faculty</h6>
+					<aside class="notes">
+						About The Class:
+						Brief introduction to an JS working environment.
+						Faculty
+						<ul>
+							<li>Name</li>
+							<li>What do you do</li>
+							<li>EID</li>
+							<li>Where to find</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Do I need to set my JS Environment?</h4>
+					<ul>
+						<li>YES!</li>
+						<li>Order</li>
+						<li>Individual Work / Team Work</li>
+						<li>Tooling</li>
+						<li>Only once (in the best case scenario)</li>
+					</ul>
+					<aside class="notes">
+							<ul>
+								<li>Wether you like it or not</li>
+								<li>To have some sense of order when you are working on a project</li>
+								<li>Individual: Proficient</li>
+								<li>Team: Guidelines / Better integration</li>
+								<li>Scripting / Automating</li>
+								<li>Do it once, never come back... (if it works don't touch it)</li>
+							</ul>
+						</aside>
+				</section>
+			</section>
+			
+			<!-- Editors And Features -->
+			<section>
+				<h3>Editors & Features</h3>
+				<ul>
+					<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+					<li><a href="https://atom.io/">Atom</a></li>
+					<li><a href="https://www.sublimetext.com/">Sublime Text</a></li>
+					<li><a href="https://www.jetbrains.com/webstorm/">Web Storm (IDE) $$$</a></li>
+				</ul>
+				<aside class="notes">
+					<ul>
+						<li>Intro for the editors</li>
+						<li>Editors vs IDE's</li>
+						<li>Choose Any</li>
+					</ul>
+				</aside>
+			</section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-                // The "normal" size of the presentation, aspect ratio will be preserved
-                // when the presentation is scaled to fit different resolutions. Can be
-                // specified using percentage units.
-                width: 960,
-                height: 700,
+			<!-- NPM -->
+			<section>
+				<section>
+					<h3>PACKAGE MANAGERS</h3>
+					<ul>
+						<li>My Options? <a href="https://nodejs.org/es/">Npm</a>, <a href="https://yarnpkg.com/lang/en/">Yarn</a>, <a href="https://bower.io/">Bower(?)</a></li>
+						<li>What does it do?</li>
+					</ul>
+					<aside class="notes">
+						<li>NPM is the default / fast / proved</li>
+						<li>YARN is faster </li>
+						<li>Bower very specific</li>
+						<li>What does it do?</li>
+					</aside>
+				</section>
+				<section>
+					<h3>NPM DEMO</h3>
+					<ul>
+						<li>Download & Install <a href="https://nodejs.org/es/">NPM</a></li>
+					</ul>
+					<pre><code style="font-size:1rem;" class="hljs" data-trim>
 
-                // Factor of the display size that should remain empty around the content
-                margin: 0.1,
+$ node -v // Check your current version
+v8.9.1 // example output
 
-                // Bounds for smallest/largest possible scale to apply to content
-                minScale: 0.2,
-                maxScale: 1,
+$ npm -v // Check your current npm version
+5.5.1 // example output
 
-                // Display presentation control arrows
-                controls: true,
+// Initialize a Repository
+$ mkdir js-env-demo // creates a directory
+$ cd js-env-demo // change directory
+$ npm init  // initialize project
 
-                // Help the user learn the controls by providing hints, for example by
-                // bouncing the down arrow when they first encounter a vertical slide
-                controlsTutorial: true,
+// Follow the steps
+				</code></pre>
+			</section>
+			<section>
+				<h3>Package.json</h3>
+				<ul>
+					<li>Go Through</li>
+				</ul>
+					<pre><code style="font-size:1rem;" class="hljs" data-trim>
+{
+	"name": "js-env-demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+},
+	"author": "",
+	"license": "ISC"
+}
+					</code></pre>
+				</section>
+			</section>
+			<!-- ES5, ES6, TypeScript -->
+			<section>
+				<section>
+					<h3>Javascript Family</h3>
+					<ul>
+						<li>ES5</li>
+						<li>ES6 (ECMAScript 2015 || ES2015)</li>
+						<li>ES7 (ECMAScript 2016 || ES2016)</li>
+					</ul>
+					<h6 style="margin-top: 1rem;">Others</h6>
+					<ul>
+						<li>TypeScript</li>
+						<li>Flow</li>
+					</ul>
+					<aside class="notes">
+						<li>ECMAScript is the standard</li>
+						<li>Javascript is the Implementation of the Standard</li>
+						<li>ES5 Core know features</li>
+						<li>ES6 (Version 6 or ECMAScript 2015)</li>
+						<li>ES7 (Version 7 or ECMAScript 2016)</li>
+						<li>TypeScript adds Static Typing, Classes, Interfaces</li>
+						<li>Flow (Static typing library)</li>
+					</aside>
+				</section>
+				<section>
+					<pre><code style="font-size:1rem;" class="hljs" data-trim>
+// Typescript Example - Must be transpiled
+import * as express from 'express';
 
-                // Determines where controls appear, "edges" or "bottom-right"
-                controlsLayout: 'bottom-right',
+// ES6/ES2015 Equivalent - Can run on server.
+const express = require('express');
 
-                // Visibility rule for backwards navigation arrows; "faded", "hidden"
-                // or "visible"
-                controlsBackArrows: 'visible',
+// ES5 - Can run on server & web
+var express = require('express')
 
-                // Display a presentation progress bar
-                progress: true,
+					</code></pre>
+				</section>
+			</section>
+			<!-- Transpilers, Compilers & Bundlers -->
+			<section>
+				<section>
+					<h3>Transpilers, Compilers & Bundlers</h3>
+				</section>
+				<section>
+					<h6>Compiling</h6>
+					<p>
+						is the general term for taking source code written in one language and transforming into another.
+					</p>
+					<ul>
+						<li><a href="https://clojurescript.org/">ClojureScript</a></li>
+						<li><a href="https://reasonml.github.io/">Reason</a></li>
+						<li><a href="http://elm-lang.org/">Elm</a></li>
+						<li><a href="https://kotlinlang.org/">Kotlin</a></li>
+					</ul>
+					<hr>
+					<h6>Transpiling</h6>
+					<p>
+						is a specific term for taking source code written in one language and transforming into another language that has a similar level of abstraction
+					</p>
+					<ul>
+						<li>TypeScript (Using tsc)</li>
+						<li>ES2015/ES2016 to ES5 (Using babel)</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Bundlers</h5>
+					<p>
+						Takes several JS Dependencies/files and puts it into one file.
+					</p>
+					<ul>
+						<li><a href="https://webpack.js.org/">WebPack</a></li>
+						<li><a href="http://browserify.org/">Browserify</a></li>
+						<li><a href="https://parceljs.org/">Parcel</a></li>
+					</ul>
+				</section>
+			</section>
+			<!-- Linting -->
+			<section>
+				<h3>Linting</h3>
+				<ul>
+					<li>what is Linting</li>
+					<li>Is it useful?</li>
+				</ul>
+				<aside class="notes">
+					Linting
+				</aside>
+			</section>
+			<!-- Testing -->
+			<section>
+				<section>
+					<h3>Testing</h3>
+					<ul>
+						<li>Why?</li>
+						<li>Everybody hates testing</li>
+					</ul>
+					<aside class="notes">
+						Testing
+					</aside>
+				</section>
+				<section>
+					<h5>Types and Libraries</h5>
+					<ul>
+						<li>
+							Unit Testing
+							(
+							<a href="https://jasmine.github.io/">Jasmine, </a>
+							<a href="https://mochajs.org/">Mocha</a>
+							&
+							<a href="http://chaijs.com/">Chai</a>
+							<a href="https://facebook.github.io/jest/">Jest</a>
+							)
+						</li>
+						<li>
+							Integration Testing
+						</li>
+						<li>
+							End to End Testing
+							(
+								<a href="http://www.protractortest.org/">
+								Protractor
+								</a>,
+								<a href="http://nightwatchjs.org/">
+									Nightwatch
+								</a>
+							)
+						</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Unit - Detailed</li>
+							<li>Integration - Component Colaboration</li>
+							<li>E2E - From user perspective</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h6>Other types of testing...</h6>
+					<pre><code style="font-size:1rem;" class="hljs" data-trim>
+Acceptance Testing
+Accessibility Testing
+Active Testing
+Agile Testing
+Age Testing
+Ad-hoc Testing
+Alpha Testing
+Assertion Testing
+API Testing
+All-pairs Testing
+Automated Testing
+Basis Path Testing
+Backward Compatibility Testing
+Beta Testing
+Benchmark Testing
+Integration Testing
+Binary Portability Testing
+Bottom Up Integration Testing
+Branch Testing
+Breadth Testing
+Black box Testing
+Code-driven Testing
+Compatibility Testing
+Comparison Testing
+Component Testing
+Configuration Testing
+Condition Coverage Testing
+Compliance Testing
+Concurrency Testing
+Conformance Testing
+Context Driven Testing
+Conversion Testing
+Decision Coverage Testing
+Destructive Testing
+Dependency Testing
+Dynamic Testing
+Domain Testing
+Error-Handling Testing
+End-to-end Testing
+Endurance Testing
+Exploratory Testing
+Partitioning Testinga
+Fault injection Testing
+Formal verification Testing
+Functional Testing
+Fuzz Testing
+Gorilla Testing
+Gray Box Testing
+Glass box Testing
+GUI software Testing
+Globalization Testing
+Hybrid Integration Testing
+Integration Testing
+Interface Testing
+Install-uninstall Testing
+Internationalization Testing
+Inter-Systems Testing
+Keyword-driven Testing
+Load Testing
+Localization Testing
+Loop Testing
+Manual Scripted Testing
+Manual-Support Testing
+Model-Based Testing
+Mutation Testing
+Modularity-driven Testing
+Non-functional Testing
+Negative Testing
+Operational Testing
+Orthogonal array Testing
+Pair Testing
+Passive Testing
+Parallel Testing
+Path Testing
+Penetration Testing
+Performance Testing
+Qualification Testing
+Ramp Testing
+Regression Testing
+Recovery Testing
+Requirements Testing
+Security Testing
+Sanity Testing
+Scenario Testing
+Scalability Testing
+Statement Testing
+Static Testing
+Stability Testing
+Smoke Testing
+Storage Testing
+Stress Testing
+Structural Testing
+System Testing
+System integration Testing
+Top Down Integration Testing
+Thread Testing
+Upgrade Testing
+Unit Testing
+User Interface Testing
+Usability Testing
+Volume Testing
+Vulnerability Testing
+White box Testing
+Workflow Testing
+					</code></pre>
+					<p style="font-size:1.2rem">
+						(
+							Source: 
+							<a href="https://www.guru99.com/types-of-software-testing.html">100+ Types of Software Testing...</a>
+						)
+					</p>
+				</section>
+				
+			</section>
+		<!-- GIT Review -->
+		<section>
+				<section>
+					<h3>GIT Review</h3>
+					<ul>
+						<li>Why Git?</li>
+						<li>Basics</li>
+						<li>Workflow</li>
+						<li>GUI's</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Version Control</li>
+							<li>Industry facto standard / Fast? / Reliable? / "The Cloud"</li>
+							<li>Descentralized / Centralized</li>
+							<li>Basics</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h5>Basics</h5>
+					<ul>
+						<li>local init / cloud service init</li>
+						<li>Add / Commit / Stash</li>
+						<li>Push</li>
+						<li>Pull / Fetch</li>
+					</ul>
+				</section>
+				<section>
+					<img src="/assets/img/accn/git-workflow.png" alt="Git Workflow" style="max-height: 40rem;">
+				</section>
+				<section>
+					<h5>Git Demo</h5>
+					<ol>
+						<li>Install git Locally <small>(Click for <a href="https://git-scm.com/downloads">Windows</a>)</small></li>
+					</ol>
+					<pre><code style="font-size:1rem;" class="hljs" data-trim>
+// GIT BASICS DEMO
 
-                // Set default timing of 2 minutes per slide
-                defaultTiming: 5,
+$ git --version
+$ git config --global user.name "Example Git User"
+$ git config --global user.email "example@messup.com"
+$ git clone https://github.com/[USER_NAME]/[REPOSITORY_NAME].git  // Example from github
 
-                // Display the page number of the current slide
-                slideNumber: false,
+					</code></pre>
+				</section>
+				<section>
+					<h5>GUI's</h5>
+					<ul>
+						<li><a href="https://git-scm.com/downloads">Git Bash (Windows)</a></li>
+						<li><a href="https://www.sourcetreeapp.com/">Source Tree</a></li>
+						<li><a href="https://www.gitkraken.com/">Git Kraken</a></li>
+					</ul>
+				</section>
+			</section>
+		
+		<!-- Deployment -->
+		<section>
+			<section>
+				<h3>Deployment</h3>
+				<aside class="notes">
+					Deployment
+				</aside>
+			</section>
+			<section>
+				<h6>Stages</h6>
+				<ul>
+					<li>Development / Local</li>
+					<li>Testing</li>
+					<li>Staging</li>
+					<li>Production</li>
+				</ul>
+			</section>
+			<section>
+				<img style="border: none;background: transparent;" src="https://i0.wp.com/ventureapp-blog.s3.amazonaws.com/uploads/2016/07/as-a-service.png" alt="IaaS vs PaaS vs SaaS" height="600px">
+			</section>
+			<section>
+				<h6>Cloud Service Providers</h6>
+				<ul>
+					<li>Amazon Web Services</li>
+					<li>Microsoft Azure</li>
+					<li>Google Cloud Platform</li>
+					<li>Oracle Cloud</li>
+					<li>Redhat OpenShift</li>
+				</ul>
+			</section>			
+		</section>
+		<!-- CI / CD -->
+		<section>
+			<h3>CI / CD</h3>
+			<aside class="notes">
+				CI / CD
+			</aside>
+		</section>
+		
+		<!-- What The Heck does this have to do with Angular? -->
+		<section>
+			<h3>Angular Project Project Structure</h3>
+			<h6>Demo</h6>
+			<aside class="notes">
+			</aside>
+		</section>
+		<!-- Q&A -->
+		<section>
+			<h2>Questions?</h2>
+			<aside class="notes">
+			</aside>
+		</section>
+		<!-- Resource List -->
+		<section>
+			<h2>Resources</h2>
+			<h6><a href="">Here</a></h6>
+			<aside class="notes">
+			</aside>
+		</section>
+		<!-- The End -->
+		<section>
+			<h2>The End</h2>
+			<aside class="notes">
+			</aside>
+		</section>
+	</div>
+</div>
 
-                // Push each slide change to the browser history
-                history: false,
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// The "normal" size of the presentation, aspect ratio will be preserved
+			// when the presentation is scaled to fit different resolutions. Can be
+			// specified using percentage units.
+			width: 960,
+			height: 700,
 
-                // Enable keyboard shortcuts for navigation
-                keyboard: true,
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
 
-                // Enable the slide overview mode
-                overview: true,
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 1,
 
-                // Vertical centering of slides
-                center: true,
+			// Display presentation control arrows
+			controls: true,
 
-                // Enables touch navigation on devices with touch input
-                touch: true,
+			// Help the user learn the controls by providing hints, for example by
+			// bouncing the down arrow when they first encounter a vertical slide
+			controlsTutorial: true,
 
-                // Loop the presentation
-                loop: false,
+			// Determines where controls appear, "edges" or "bottom-right"
+			controlsLayout: 'bottom-right',
 
-                // Change the presentation direction to be RTL
-                rtl: false,
+			// Visibility rule for backwards navigation arrows; "faded", "hidden"
+			// or "visible"
+			controlsBackArrows: 'visible',
 
-                // Randomizes the order of slides each time the presentation loads
-                shuffle: false,
+			// Display a presentation progress bar
+			progress: true,
 
-                // Turns fragments on and off globally
-                fragments: true,
+			// Set default timing of 2 minutes per slide
+			defaultTiming: 5,
 
-                // Flags if the presentation is running in an embedded mode,
-                // i.e. contained within a limited portion of the screen
-                embedded: false,
+			// Display the page number of the current slide
+			slideNumber: false,
 
-                // Flags if we should show a help overlay when the questionmark
-                // key is pressed
-                help: true,
+			// Push each slide change to the browser history
+			history: true,
 
-                // Flags if speaker notes should be visible to all viewers
-                showNotes: false,
+			// Enable keyboard shortcuts for navigation
+			keyboard: true,
 
-                // Global override for autoplaying embedded media (video/audio/iframe)
-                // - null: Media will only autoplay if data-autoplay is present
-                // - true: All media will autoplay, regardless of individual setting
-                // - false: No media will autoplay, regardless of individual setting
-                autoPlayMedia: null,
+			// Enable the slide overview mode
+			overview: true,
 
-                // Number of milliseconds between automatically proceeding to the
-                // next slide, disabled when set to 0, this value can be overwritten
-                // by using a data-autoslide attribute on your slides
-                autoSlide: 0,
+			// Vertical centering of slides
+			center: true,
 
-                // Stop auto-sliding after user input
-                autoSlideStoppable: true,
+			// Enables touch navigation on devices with touch input
+			touch: true,
 
-                // Use this method for navigation when auto-sliding
-                autoSlideMethod: Reveal.navigateNext,
+			// Loop the presentation
+			loop: false,
 
-                // Enable slide navigation via mouse wheel
-                mouseWheel: false,
+			// Change the presentation direction to be RTL
+			rtl: false,
 
-                // Hides the address bar on mobile devices
-                hideAddressBar: true,
+			// Randomizes the order of slides each time the presentation loads
+			shuffle: false,
 
-                // Opens links in an iframe preview overlay
-                previewLinks: true,
+			// Turns fragments on and off globally
+			fragments: true,
 
-                // Transition style
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
+			// Flags if the presentation is running in an embedded mode,
+			// i.e. contained within a limited portion of the screen
+			embedded: false,
 
-                // Transition speed
-                transitionSpeed: 'default', // default/fast/slow
+			// Flags if we should show a help overlay when the questionmark
+			// key is pressed
+			help: true,
 
-                // Transition style for full page slide backgrounds
-                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Flags if speaker notes should be visible to all viewers
+			showNotes: false,
 
-                // Number of slides away from the current that are visible
-                viewDistance: 3,
+			// Global override for autoplaying embedded media (video/audio/iframe)
+			// - null: Media will only autoplay if data-autoplay is present
+			// - true: All media will autoplay, regardless of individual setting
+			// - false: No media will autoplay, regardless of individual setting
+			autoPlayMedia: null,
 
-                // Parallax background image
-                parallaxBackgroundImage: 'assets/img/accn/parallax-bg-main-5.jpeg', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+			// Number of milliseconds between automatically proceeding to the
+			// next slide, disabled when set to 0, this value can be overwritten
+			// by using a data-autoslide attribute on your slides
+			autoSlide: 0,
 
-                // Parallax background size
-                parallaxBackgroundSize: '2000px 1000px', // CSS syntax, e.g. "2100px 900px"
+			// Stop auto-sliding after user input
+			autoSlideStoppable: true,
 
-                // Number of pixels to move the parallax background per slide
-                // - Calculated automatically unless specified
-                // - Set to 0 to disable movement along an axis
-                parallaxBackgroundHorizontal: null,
-                parallaxBackgroundVertical: null,
+			// Use this method for navigation when auto-sliding
+			autoSlideMethod: Reveal.navigateNext,
 
-                // The display mode that will be used to show slides
-                display: 'block',
+			// Enable slide navigation via mouse wheel
+			mouseWheel: false,
 
-				// Realtime Live Presentation
-                multiplex: {
-					secret: null,
-					id: "ec200273f477d81a",
-                    url: 'https://accn-presentation-service.herokuapp.com' // Location of socket.io server
-                },
-                dependencies: [
-                    // Online Real-Time Presentation
-                    { src: '//cdn.socket.io/socket.io-1.4.5.js', async: true },
-                    { src: 'plugin/multiplex/client.js', async: true },
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
 
-                    // Base Dependencies
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+			// Opens links in an iframe preview overlay
+			previewLinks: true,
+
+			// Transition style
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Transition speed
+			transitionSpeed: 'default', // default/fast/slow
+
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+			// Number of slides away from the current that are visible
+			viewDistance: 3,
+
+			// Parallax background image
+			parallaxBackgroundImage: 'assets/img/accn/parallax-bg-main-5.jpeg', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+			// Parallax background size
+			parallaxBackgroundSize: '2000px 1000px', // CSS syntax, e.g. "2100px 900px"
+
+			// Number of pixels to move the parallax background per slide
+			// - Calculated automatically unless specified
+			// - Set to 0 to disable movement along an axis
+			parallaxBackgroundHorizontal: null,
+			parallaxBackgroundVertical: null,
+
+			// The display mode that will be used to show slides
+			display: 'block',
+
+			// Realtime Live Presentation
+			multiplex: {
+				secret: null,
+				id: "ec200273f477d81a",
+				url: 'https://accn-presentation-service.herokuapp.com' // Location of socket.io server
+			},
+			dependencies: [
+				// Online Real-Time Presentation
+				{ src: '//cdn.socket.io/socket.io-1.4.5.js', async: true },
+				{ src: 'plugin/multiplex/client.js', async: true },
+
+				// Base Dependencies
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
 </html>
